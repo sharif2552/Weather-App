@@ -1,0 +1,61 @@
+.inputform{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    font-weight: 1000;
+
+}
+.inputform input{
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
+    border: 2px solid black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: 1000;
+
+}
+
+.city{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    font-weight: 1000;
+
+}
+
+.temperature{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    font-weight: 1000;
+}
+.weather{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    font-weight: 1000;
+}
+
+.card{
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(116, 118, 134);
+    align-items: center;
+    margin-top: 60px;
+    border-radius: 10px;
+    margin-left: 60px;
+    margin-right: 60px;
+    
+
+}

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { getWeatherData } from '../api';
-import Location from './Location';
+import '../styles/Weather.css';
 function Weather() {
     const [city, setCity] = useState('New York'); // Add state for city input
     const [weatherData, setWeatherData] = useState(null);
@@ -22,19 +22,26 @@ function Weather() {
     // Display weather information from weatherData
     return (
         <div>
-            <label htmlFor="cityInput">Enter city:</label> {/* Add label for input */}
+
+        <div className='card'>
+            <div className='inputform'>
+           <label htmlFor="cityInput">Enter city:</label> {/* Add label for input */}
             <input
                 type="text"
                 id="cityInput"
+                
                 value={city}
                 onChange={(e) => setCity(e.target.value)} // Add onChange handler to update city state
-            />
+            />                
+            </div>
+ 
 
-            
-            <h2>Weather in {weatherData.name}, {weatherData.sys.country}</h2>
+
+            <h2 className='city'>Weather in {weatherData.name}, {weatherData.sys.country}</h2>
            
-            <p>Temperature: {weatherData.main.temp}°K</p>
-            <p>Weather: {weatherData.weather[0].description}</p>
+            <p className='temperature'>Temperature: {weatherData.main.temp}°K</p>
+            <p className='weather'>Weather: {weatherData.weather[0].description}</p>
+        </div>
         </div>
     );
 }
